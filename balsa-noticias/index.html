@@ -28,10 +28,10 @@
       }
     </style>
   </head>
-  <body class="text-slate-900">
+  <body class="text-slate-900 overflow-x-hidden">
     <!-- Navbar -->
     <nav
-      class="bg-white border-b border-slate-200 py-4 px-6 flex justify-between items-center sticky top-0 z-50"
+      class="bg-white border-b border-slate-200 py-4 px-4 sm:px-6 flex justify-between items-center sticky top-0 z-50"
     >
       <div class="flex items-center gap-2">
         <div
@@ -54,16 +54,18 @@
     </nav>
 
     <!-- Breadcrumb -->
-    <div class="max-w-4xl mx-auto px-6 py-4 text-xs text-slate-400 flex gap-2">
+    <div
+      class="max-w-4xl mx-auto px-4 sm:px-6 py-4 text-xs text-slate-400 flex gap-2 flex-wrap"
+    >
       <span>Local</span> <span>/</span> <span>Maranhão</span> <span>/</span>
       <span class="text-slate-600 font-medium">São Félix de Balsas</span>
     </div>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-6 pb-20">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 pb-12 sm:pb-20">
       <!-- Header Section -->
       <div
-        class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm mb-8"
+        class="bg-white rounded-3xl border border-slate-200 p-5 sm:p-8 shadow-sm mb-6 sm:mb-8"
       >
         <div
           class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
@@ -77,7 +79,7 @@
             </p>
           </div>
           <div
-            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-bold border border-blue-100"
+            class="bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-xs sm:text-sm font-bold border border-blue-100"
           >
             Análise Atualizada: Setembro 2026
           </div>
@@ -168,10 +170,11 @@
 
       <!-- News Article -->
       <div
-        class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm relative overflow-hidden"
+        class="bg-white rounded-3xl border border-slate-200 p-5 sm:p-8 shadow-sm relative overflow-hidden"
       >
-        <h2 class="text-2xl font-extrabold text-slate-900 mb-6">
-          Análise de Desempenho: Heider Nunes em Queda Livre nas Pesquisas
+        <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-6">
+          Análise de Desempenho: Heider Nunes em Queda Livre nas Pesquisas após
+          conflito na Praça Central
         </h2>
 
         <div
@@ -180,17 +183,17 @@
           <p class="font-semibold text-slate-800">
             Dados exclusivos da Balsas Notícias revelam que o prefeito Heider
             Nunes (PRD) está perdendo apoio de forma acelerada em São Félix de
-            Balsas. A análise cruzada de dados do TSE, redes sociais e
-            engajamento local aponta para uma queda de 12,4% na intenção de voto
-            nos últimos 30 dias.
+            Balsas após uma briga na Praça Central. A análise cruzada de dados
+            do TSE, redes sociais e engajamento local aponta para uma queda de
+            12,4% na intenção de voto nos últimos 30 dias.
           </p>
           <p>
-            A pesquisa, conduzida pela equipe de inteligência da Balsas Notícias,
-            mostra que a competitividade na região atingiu nível "Muito Alto",
-            com margem de apenas 0,7% entre o primeiro e segundo colocado.
-            Especialistas apontam que a insatisfação com a gestão financeira da
-            prefeitura e a falta de obras estruturais estão impactando
-            diretamente a base de apoio do PRD.
+            A pesquisa, conduzida pela equipe de inteligência da Balsas
+            Notícias, mostra que a competitividade na região atingiu nível
+            "Muito Alto", com margem de apenas 0,7% entre o primeiro e segundo
+            colocado. Especialistas apontam que a insatisfação com a gestão
+            financeira da prefeitura e a falta de obras estruturais estão
+            impactando diretamente a base de apoio do PRD.
           </p>
           <p>
             Os bairros periféricos de São Félix de Balsas registraram o maior
@@ -201,9 +204,15 @@
             sustentavam a base eleitoral do atual governo.
           </p>
 
+          <p class="font-bold text-slate-900 mt-5 mb-2">
+            Confira o material abaixo:
+          </p>
+
           <!-- Blurred Section -->
-          <div class="relative mt-8">
-            <div class="blur-content space-y-4">
+          <div
+            class="relative mt-5 sm:mt-8 max-h-[260px] sm:max-h-[300px] overflow-hidden"
+          >
+            <div class="blur-content space-y-2">
               <p>
                 O relatório completo, que será publicado em 48 horas, detalha a
                 evolução da intenção de voto por zona eleitoral, revelando que
@@ -244,67 +253,66 @@
     <!-- Modal de Captura -->
     <div
       id="modal"
-      class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-6"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-3 sm:p-6 overflow-y-auto"
     >
-      <!-- Substitua a seção do formulário anterior por este bloco -->
-<div class="relative my-8 rounded-3xl overflow-hidden border-2 border-blue-200 shadow-xl">
-  
-  <!-- Simulação de Vídeo ao Fundo -->
-  <div class="absolute inset-0 bg-slate-900 flex items-center justify-center overflow-hidden">
-    <!-- Imagem de fundo simulando frame de vídeo (substitua a URL se tiver uma imagem da briga) -->
-    <img src="https://tse2.explicit.bing.net/th/id/OIP.DGFBSQhEbo30UM3vJuT8gwHaFp?r=0&pid=Api&P=0&h=180" 
-         class="absolute inset-0 w-full h-full object-cover opacity-40 blur-[2px]" 
-         alt="Preview do vídeo">
-    
-    <!-- Ícone de Play Gigante para dar a sensação de vídeo -->
-    <div class="relative z-10 bg-white/20 p-6 rounded-full backdrop-blur-sm border border-white/30 text-white">
-      <i data-lucide="play" class="w-12 h-12 fill-current"></i>
-    </div>
-  </div>
-
-  <!-- Camada de Gradiente para legibilidade -->
-  <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-transparent to-slate-900/80 pointer-events-none"></div>
-
-  <!-- Formulário Flutuante -->
-  <div class="relative z-20 p-6 md:p-8 bg-white/95 backdrop-blur-md m-4 rounded-2xl shadow-2xl border border-white">
-    <div class="text-center mb-6">
-      <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
-        <i data-lucide="file-text" class="w-6 h-6"></i>
-      </div>
-      <h3 class="text-xl font-extrabold text-slate-900">Relatório de Rejeição Restrito</h3>
-      <p class="text-slate-500 text-sm mt-1">Informe seu WhatsApp para liberar o acesso imediato aos dados sensíveis.</p>
-    </div>
-
-    <form action="https://formspree.io/f/mbgjvrya" method="POST" class="space-y-4">
-      <p class="text-slate-900 font-bold text-sm mb-2 text-center uppercase tracking-tight">
-        <span class="text-red-600">⚠️ ATENÇÃO:</span> Veja o vídeo da confusão abaixo:
-      </p>
-      
-      <div class="flex flex-col gap-2">
-        <label class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1">Número de Telefone / WhatsApp</label>
-        <input
-          type="tel"
-          name="phone"
-          required
-          placeholder="(99) 99999-9999"
-          class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white"
-        />
-      </div>
-
-      <button
-        type="submit"
-        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-200 transform hover:scale-[1.02] active:scale-95"
+      <div
+        class="bg-white w-full max-w-md rounded-3xl shadow-2xl p-5 sm:p-8 relative animate-in fade-in zoom-in duration-300 max-h-[calc(100vh-1.5rem)] overflow-y-auto"
       >
-        Liberar Acesso ao Relatório
-      </button>
-      
-      <p class="text-[10px] text-center text-slate-400 mt-4">
-        Ao acessar, você concorda com os termos de uso de dados de Balsas Notícias.
-      </p>
-    </form>
-  </div>
-</div>
+        <button
+          onclick="closeModal()"
+          class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+        >
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
 
+        <div class="text-center mb-8">
+          <div
+            class="bg-blue-100 text-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4"
+          >
+            <i data-lucide="file-text" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-slate-900">
+            Relatório Restrito
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Para receber o relatório, informe seu número de WhatsApp abaixo.
+          </p>
+        </div>
+
+        <form
+          action="https://formspree.io/f/mbgjvrya"
+          method="POST"
+          class="space-y-4"
+        >
+          <div>
+            <label
+              for="phone"
+              class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1"
+              >Número de telefone / WhatsApp</label
+            >
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              autocomplete="tel"
+              required
+              placeholder="(99) 99999-9999"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-blue-200"
+          >
+            Liberar Acesso ao Relatório
+          </button>
+          <p class="text-[10px] text-center text-slate-400 mt-4">
+            Ao acessar, você concorda com os termos de uso de dados de Balsas
+            Notícias.
+          </p>
+        </form>
+      </div>
+    </div>
 
     <script>
       lucide.createIcons();
