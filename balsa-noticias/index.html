@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análise de Queda - Heider Nunes | Balsa Notícias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+      }
+      .blur-content {
+        filter: blur(6px);
+        user-select: none;
+        pointer-events: none;
+      }
+      .gradient-overlay {
+        background: linear-gradient(to bottom, transparent, #f8fafc);
+      }
+      .hub-gradient {
+        background: linear-gradient(135deg, #0000f5 0%, #1e40af 100%);
+      }
+    </style>
+  </head>
+  <body class="text-slate-900">
+    <!-- Navbar -->
+    <nav
+      class="bg-white border-b border-slate-200 py-4 px-6 flex justify-between items-center sticky top-0 z-50"
+    >
+      <div class="flex items-center gap-2">
+        <div
+          class="hub-gradient text-white p-1 rounded font-bold text-xs w-8 h-8 flex items-center justify-center"
+        >
+          HP
+        </div>
+        <span class="font-extrabold text-xl tracking-tight text-slate-800"
+          >Balsa<span class="text-blue-600">Notícias</span></span
+        >
+      </div>
+      <div class="hidden md:flex gap-6 text-sm font-medium text-slate-500">
+        <a href="#" class="hover:text-blue-600">Análises</a>
+        <a href="#" class="hover:text-blue-600">Candidatos</a>
+        <a href="#" class="hover:text-blue-600">Mapas</a>
+      </div>
+      <button class="bg-slate-100 p-2 rounded-full">
+        <i data-lucide="search" class="w-5 h-5 text-slate-600"></i>
+      </button>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-4xl mx-auto px-6 py-4 text-xs text-slate-400 flex gap-2">
+      <span>Local</span> <span>/</span> <span>Maranhão</span> <span>/</span>
+      <span class="text-slate-600 font-medium">São Félix de Balsas</span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-6 pb-20">
+      <!-- Header Section -->
+      <div
+        class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm mb-8"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6"
+        >
+          <div>
+            <h1 class="text-3xl font-extrabold text-slate-900 mb-2">
+              São Félix de Balsas
+            </h1>
+            <p class="text-slate-500 flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4"></i> Maranhão, Brasil
+            </p>
+          </div>
+          <div
+            class="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-bold border border-blue-100"
+          >
+            Análise Atualizada: Setembro 2026
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <!-- Prefeito -->
+          <div class="space-y-1">
+            <span
+              class="text-xs font-bold text-slate-400 uppercase tracking-wider"
+              >Prefeito(a) Atual</span
+            >
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-slate-200 rounded-full overflow-hidden">
+                <img
+                  src="https://fotos.hubpolitico.com.br/fotos/webp/2024/c8bfcc0b62dd.webp"
+                  alt="Heider Nunes"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <p class="font-bold text-lg leading-tight">Heider Nunes</p>
+                <p class="text-sm text-slate-500 font-medium">PRD</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tendência -->
+          <div class="space-y-1">
+            <span
+              class="text-xs font-bold text-slate-400 uppercase tracking-wider"
+              >Tendência Ideológica</span
+            >
+            <div class="flex items-center gap-2">
+              <span
+                class="bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs font-bold"
+                >Centro-Esquerda</span
+              >
+              <span class="text-xs text-slate-400">Ponderado por votos</span>
+            </div>
+          </div>
+
+          <!-- Competitividade -->
+          <div class="space-y-1">
+            <span
+              class="text-xs font-bold text-slate-400 uppercase tracking-wider"
+              >Competitividade</span
+            >
+            <div class="flex items-center gap-2">
+              <span class="text-red-600 font-bold text-lg">Muito Alta</span>
+              <span class="text-xs text-slate-400">Margem de 0,7%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <p class="text-xs font-bold text-slate-400 uppercase mb-1">
+            Renda Estimada
+          </p>
+          <p class="text-xl font-extrabold text-slate-800">R$ 674</p>
+          <p class="text-[10px] text-slate-400">Classe Baixa</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <p class="text-xs font-bold text-slate-400 uppercase mb-1">
+            Eleitorado
+          </p>
+          <p class="text-xl font-extrabold text-slate-800">4.237</p>
+          <p class="text-[10px] text-slate-400">Registrados (TSE)</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <p class="text-xs font-bold text-slate-400 uppercase mb-1">
+            Votos Atuais
+          </p>
+          <p class="text-xl font-extrabold text-red-600">↓ 12.4%</p>
+          <p class="text-[10px] text-red-400 font-medium">Queda brusca</p>
+        </div>
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <p class="text-xs font-bold text-slate-400 uppercase mb-1">
+            Confiança
+          </p>
+          <p class="text-xl font-extrabold text-slate-800">Média</p>
+          <p class="text-[10px] text-slate-400">Base de dados 2026</p>
+        </div>
+      </div>
+
+      <!-- News Article -->
+      <div
+        class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm relative overflow-hidden"
+      >
+        <h2 class="text-2xl font-extrabold text-slate-900 mb-6">
+          Análise de Desempenho: Heider Nunes em Queda Livre nas Pesquisas
+        </h2>
+
+        <div
+          class="prose prose-slate max-w-none text-slate-600 leading-relaxed space-y-4"
+        >
+          <p class="font-semibold text-slate-800">
+            Dados exclusivos da Balsa Notícias revelam que o prefeito Heider
+            Nunes (PRD) está perdendo apoio de forma acelerada em São Félix de
+            Balsas. A análise cruzada de dados do TSE, redes sociais e
+            engajamento local aponta para uma queda de 12,4% na intenção de voto
+            nos últimos 30 dias.
+          </p>
+          <p>
+            A pesquisa, conduzida pela equipe de inteligência da Balsa Notícias,
+            mostra que a competitividade na região atingiu nível "Muito Alto",
+            com margem de apenas 0,7% entre o primeiro e segundo colocado.
+            Especialistas apontam que a insatisfação com a gestão financeira da
+            prefeitura e a falta de obras estruturais estão impactando
+            diretamente a base de apoio do PRD.
+          </p>
+          <p>
+            Os bairros periféricos de São Félix de Balsas registraram o maior
+            índice de rejeição, com menções negativas nas redes sociais
+            aumentando 40% nos últimos quinze dias. A análise de sentimento
+            detectou um padrão de reclamações relacionadas à falta de
+            investimentos em saúde e educação, setores que historicamente
+            sustentavam a base eleitoral do atual governo.
+          </p>
+
+          <!-- Blurred Section -->
+          <div class="relative mt-8">
+            <div class="blur-content space-y-4">
+              <p>
+                O relatório completo, que será publicado em 48 horas, detalha a
+                evolução da intenção de voto por zona eleitoral, revelando que
+                em algumas regiões a queda já supera 20%. Os dados indicam que,
+                se a tendência se mantiver, Heider Nunes poderá perder a
+                liderança para o segundo colocado ainda no primeiro turno.
+              </p>
+              <p>
+                Além disso, a análise de patrimônio e gastos de campanha mostra
+                que o atual prefeito declarou R$ 3,9 milhões ao TSE em 2024, mas
+                os investimentos em infraestrutura não refletem esse montante. A
+                população local questiona o destino dos recursos, especialmente
+                após denúncias de superfaturamento em obras públicas.
+              </p>
+              <p>
+                A projeção para as próximas duas semanas é preocupante: caso a
+                queda continue no mesmo ritmo, Heider Nunes poderá cair para a
+                terceira posição na preferência do eleitorado registrado, o que
+                representaria uma derrota histórica para o PRD na região.
+              </p>
+            </div>
+            <div
+              class="absolute inset-0 gradient-overlay flex items-end justify-center pb-4"
+            >
+              <button
+                onclick="openModal()"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-xl transition-all transform hover:scale-105 flex items-center gap-2"
+              >
+                <i data-lucide="lock" class="w-4 h-4"></i> Ver Relatório
+                Completo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal de Captura -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-6"
+    >
+      <div
+        class="bg-white w-full max-w-md rounded-3xl shadow-2xl p-8 relative animate-in fade-in zoom-in duration-300"
+      >
+        <button
+          onclick="closeModal()"
+          class="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+        >
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+
+        <div class="text-center mb-8">
+          <div
+            class="bg-blue-100 text-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4"
+          >
+            <i data-lucide="file-text" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-slate-900">
+            Relatório Restrito
+          </h3>
+          <p class="text-slate-500 mt-2">
+            Este relatório contém dados sensíveis sobre a queda na intenção de
+            voto e análise de rejeição por bairro. Para acessar o documento
+            completo, informe seu e-mail institucional ou pessoal.
+          </p>
+        </div>
+
+        <form
+          action="https://formspree.io/f/mbgjvrya"
+          method="POST"
+          class="space-y-4"
+        >
+          <div>
+            <label
+              class="block text-xs font-bold text-slate-400 uppercase mb-1 ml-1"
+              >E-mail Institucional ou Pessoal</label
+            >
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="exemplo@email.com"
+              class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-blue-200"
+          >
+            Liberar Acesso ao Relatório
+          </button>
+          <p class="text-[10px] text-center text-slate-400 mt-4">
+            Ao acessar, você concorda com os termos de uso de dados da Balsa
+            Notícias.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+
+      function openModal() {
+        document.getElementById("modal").classList.remove("hidden");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      // Fechar modal ao clicar fora
+      window.onclick = function (event) {
+        let modal = document.getElementById("modal");
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+  </body>
+</html>
